@@ -1,0 +1,41 @@
+export const t = (varName) => `var(--${varName})`;
+
+export const theme = {
+  sidebar: {
+    width: '17rem',
+    get bg()          { return t('sidebar-bg') },
+    get hoverBg()     { return t('sidebar-hover-bg') },
+    get activeColor() { return t('sidebar-active') },
+    get activeBg()    { return t('sidebar-active-bg') },
+    get textMuted()   { return t('sidebar-text-muted') },
+    get textNormal()  { return t('sidebar-text') },
+    get border()      { return t('sidebar-border') },
+    get brandText()   { return t('sidebar-brand') },
+  },
+  topbar: {
+    height: '55px',
+    get bg()          { return t('topbar-bg') },
+    get border()      { return t('topbar-border') },
+    get shadow()      { return t('topbar-shadow') },
+    get text()        { return t('topbar-text') },
+    get textMuted()   { return t('topbar-text-muted') },
+    get hoverBg()     { return t('topbar-hover-bg') },
+  },
+  page: {
+    get bg()          { return t('page-bg') },
+    get cardBg()      { return t('card-bg') },
+    get border()      { return t('border-color') },
+    get text()        { return t('text-primary') },
+    get textMuted()   { return t('text-muted') },
+    get heading()     { return t('text-heading') },
+    get tableHeaderBg() { return t('table-header-bg') },
+    get tableHover()  { return t('table-hover') },
+    get badgePkwt()   { return t('badge-pkwt') },
+    get badgePkwtt()  { return t('badge-pkwtt') },
+    get badgeMagang() { return t('badge-magang') },
+    primary:  '#216ac4',
+    danger:   '#dc2626',
+    success:  '#16a34a',
+    warning:  '#f8a400',
+  },
+};
